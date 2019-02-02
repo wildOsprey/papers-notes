@@ -7,7 +7,7 @@ You can find a more complex explanation in this [paper](https://globaljournals.o
 
 Firstly, as you can see in Figure 1, a face is detected and divided into regions. 
 
-![The face divided into regions]()
+![The face divided into regions](https://github.com/wildOsprey/papers_notes/blob/facial-tracking/images/facial_tracking/lbp/divided_face.JPG)
 *Figure 1. The face divided into regions.*
 
 Then from each region features are extracted.
@@ -15,23 +15,23 @@ Then from each region features are extracted.
 The original LBP operator works with the eight neighbors of a pixel, using the value of this center pixel as a threshold. If a neighbor pixel has a higher gray value than the center pixel (or the the same gray value
 than a one is assigned to that pixel, else it gets a zero. The LBP code for the center pixel is then produced by concatenating the eight ones or zeros to a binary code (Figure 2). 
 
-![The process of encoding]()
+![The process of encoding](https://github.com/wildOsprey/papers_notes/blob/facial-tracking/images/facial_tracking/lbp/Origin_lbp.JPG)
 *Figure 2. The process of encoding.*
 
 
 The extended operator takes neighbors with some radius R. P, in this case, is a number of points (Figure 3).
 
-![The extended LBP neighb]()
+![The extended LBP neighb](https://github.com/wildOsprey/papers_notes/blob/facial-tracking/images/facial_tracking/lbp/extended_lbp.JPG)
 *Figure 3. The extended LBP neighbors.*
 
 
-The algorithm is similar, the center value is comparing with values of neighbors, but these values are needed to be normalized. It is achieved with the next formula: ![formula]() 
+The algorithm is similar, the center value is comparing with values of neighbors, but these values are needed to be normalized. It is achieved with the next formula: ![formula](https://github.com/wildOsprey/papers_notes/blob/facial-tracking/images/facial_tracking/lbp/formula_sphere_coords.JPG) 
 
 
 
 Once the Local Binary Pattern for every pixel is calculated, the feature vector of the image can be constructed. For an efficient representation of the face, first, the image is divided into K2 regions. In Figure 4 a face image is divided into 82 = 64 regions. For every region, a histogram with all possible labels is constructed.
 
-![Face image divided into 64 regions with corresponding histograms]()
+![Face image divided into 64 regions with corresponding histograms](https://github.com/wildOsprey/papers_notes/blob/facial-tracking/images/facial_tracking/lbp/histogram.JPG)
 *Figure 4.  Face image divided into 64 regions with corresponding histograms.*
 
 
@@ -39,10 +39,10 @@ Then, they are concatenated and compared with database samples.
 
 In Figure 5 there is a flowchart of the LBP and in Figure 6 - a flowchart for the recognition process.
 
-![Flowchart of the LBP Process]()
+![Flowchart of the LBP Process](https://github.com/wildOsprey/papers_notes/blob/facial-tracking/images/facial_tracking/lbp/flowchart1.jpeg)
 *Figure 5. Flowchart of the LBP Process.*
 
-![Flowchart for face recognition system]()
+![Flowchart for face recognition system](https://github.com/wildOsprey/papers_notes/blob/facial-tracking/images/facial_tracking/lbp/flowchart2.jpeg)
 *Figure 6. Flowchart for face recognition system.*
 
 
