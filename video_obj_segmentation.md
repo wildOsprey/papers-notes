@@ -36,7 +36,7 @@ For training they use SGD with minibatches of 10 images and a polynomial learnin
 
 For the extra mask channel of ﬁlters in the ﬁrst convolutional layer they use gaussian initialization. We also tried zero initialization, but observed no difference.
 
-![An example of the results on YoutubeObjects]()
+![An example of the results on YoutubeObjects](https://github.com/wildOsprey/papers_notes/blob/master/images/video_obj_segm/ex1.PNG)
 *Figure 1. An example of the results on YoutubeObjects.*
 
 Because of this flexibility, which is expressed in the fact that the algorithm can handle different types of input annotations, there are additional variations of this algorithm.
@@ -45,7 +45,7 @@ One of them is called MaskTrackBox. It takes a bounding box annotation in the fi
 
 Another one is MaskTrack+Flow. It is based on the optical flow[7]. Given a video sequence, they compute the optical flow using EpicFlow with Flow Fields[8] matches and convolutional boundaries and in parallel to the MaskTrack they can compute a second output mask using the magnitude of the optical flow field as an input image (replicated into a three-channel image).
 
-![An example of the results using different input annotations]()
+![An example of the results using different input annotations](https://github.com/wildOsprey/papers_notes/blob/master/images/video_obj_segm/ex2.PNG)
 *Figure 2. An example of the results using different input annotations.*
 
 
@@ -76,18 +76,18 @@ And cons:
 
 To summarize, in 2017 in the DAVIS-2017 challenge [6] (a year after the work was published) all of the leading works was based on either MaskTrack or OSVOS[5].
 
-![Top scores from DAVIS-2017 challenge]()
+![Top scores from DAVIS-2017 challenge](https://github.com/wildOsprey/papers_notes/blob/master/images/video_obj_segm/top_scores.PNG)
 *Figure 3. Top scores from DAVIS-2017 challenge.*
 
 
 ### Useful Links
 
-[1]: [Learning Video Object Segmentation From Static Images | Spotlight 2-2C](https://www.youtube.com/watch?v=aPSqUby99Wc&t=5s)
-[2]: [Learning Video Object Segmentation from Static Images (results on YoutubeObjects)](https://www.youtube.com/watch?v=Ze7dKwwAw8o&t=11s)
-[3]: [GOTURN: Generic Object Tracking Using Regression Networks](https://github.com/davheld/GOTURN)
-[4]: [MDNet: Multi-Domain Convolutional Neural Network Tracker](https://github.com/HyeonseobNam/MDNet)
-[5]: [The Basics of Video Object Segmentation](https://techburst.io/video-object-segmentation-the-basics-758e77321914?gi=7ebd410f75de)
-[6]: [A Meta-analysis of DAVIS-2017 Video Object Segmentation Challenge](https://medium.com/@eddiesmo/a-meta-analysis-of-davis-2017-video-object-segmentation-challenge-c438790b3b56)
+1. [Learning Video Object Segmentation From Static Images | Spotlight 2-2C](https://www.youtube.com/watch?v=aPSqUby99Wc&t=5s)
+2. [Learning Video Object Segmentation from Static Images (results on YoutubeObjects)](https://www.youtube.com/watch?v=Ze7dKwwAw8o&t=11s)
+3. [GOTURN: Generic Object Tracking Using Regression Networks](https://github.com/davheld/GOTURN)
+4. [MDNet: Multi-Domain Convolutional Neural Network Tracker](https://github.com/HyeonseobNam/MDNet)
+5. [The Basics of Video Object Segmentation](https://techburst.io/video-object-segmentation-the-basics-758e77321914?gi=7ebd410f75de)
+6. [A Meta-analysis of DAVIS-2017 Video Object Segmentation Challenge](https://medium.com/@eddiesmo/a-meta-analysis-of-davis-2017-video-object-segmentation-challenge-c438790b3b56)
 
 
 

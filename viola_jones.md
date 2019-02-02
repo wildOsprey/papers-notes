@@ -31,7 +31,7 @@ For detection they use window which passes through the whole image looking for f
 
 The simple features that have been used are reminiscent of **Haar** basis functions. Authors used three kinds of them: *two-rectangle feature, three-rectangle, four-rectangle features.*
 
-![Two-rectangle (A, B), three-rectangle (C) and four-rectangle (D) features]()
+![Two-rectangle (A, B), three-rectangle (C) and four-rectangle (D) features](https://github.com/wildOsprey/papers_notes/blob/master/images/viola-jones/haar_features.PNG)
 *Figure 1. Two-rectangle (A, B), three-rectangle (C) and four-rectangle (D) features*
 
 The value of these features is calculated by subtraction the sums of light parts of feature and the dark ones. 
@@ -40,7 +40,7 @@ To optimize calculation of these features authors introduce the concept of **“
 
 So, when you need to decide whether your feature fits, you don’t need to sum each pixel. It can be computed with four array references.
 
-![Example of calculating an integral image and finding a value of some feature]()
+![Example of calculating an integral image and finding a value of some feature](https://github.com/wildOsprey/papers_notes/blob/master/images/viola-jones/integral_image.PNG)
 *Figure 2. An example of calculating an integral image and finding a value of some feature*
 
 To train the model they used the modification of AdaBoost algorithm and the cascade structure.
@@ -49,12 +49,12 @@ AdaBoost (adaptive boosting) is used both to select a small set of features and 
 
 The outcome of the detection process is a degenerate decision tree, what they call the “cascade”. When you are passing through image, you are trying to classify a feature. A positive result from the first classifier triggers the next, and then if second classifier also has positive result, we call the next and so on. If it is negative – we reject current sub-window.
 
-![Cascade architecture]()
+![Cascade architecture](https://github.com/wildOsprey/papers_notes/blob/master/images/viola-jones/cascade_architecture.PNG)
 *Figure 3. Cascade architecture*
 
 Sub-window processing is called a stage of cascade. Each stage is trained by adding features until the target detection and false positives rates are met (these rates are determined by testing the detector on a validation set). Stages are added until the overall target for false positive and detection rate is met.
 
-![A nice visualization of the algorithm]()
+![A nice visualization of the algorithm](https://github.com/wildOsprey/papers_notes/blob/master/images/viola-jones/ex.png)
 *Figure 4. A nice visualization of the algorithm[8].*
 
 

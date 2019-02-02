@@ -24,7 +24,7 @@ The one-shot learning problem appears when you have to correctly make prediction
 
 A Siamese neural network consists of twin networks which accept distinct inputs but are joined by an energy function at the top. These twin networks also share the same weights. In Figure 1, the architecture of the neural network is represented. You can read about parameters details in the chapter 3.2 Learning.
 
-![Conv architecture]()
+![Conv architecture](https://github.com/wildOsprey/papers_notes/blob/master/images/siamese_nns/convolution_architecture.JPG)
 *Figure 1. Convolution architecture selected for the verification task from the paper. Siamese twin is not shown but joins after the 4096 unit fully-connected layer where L1 distance is computed.*
 
 
@@ -49,7 +49,7 @@ For the final one-shot verification test authors used a technique, developed by 
 
 Figures 2 shows the one-shot results on MNIST dataset. As you can see, the accuracy of Convolutional Siamese Net is pretty good, so we can conclude that authors made a great job and got the results they expected.  
 
-![best accuracy]()
+![best accuracy](https://github.com/wildOsprey/papers_notes/blob/master/images/siamese_nns/best_acc.jpeg)
 *Figure 2. Best one-shot accuracy from different types of network*
 
 
@@ -66,11 +66,11 @@ Cons:
 
 ### Useful Links
 
-[1]: [What are Siamese neural networks, what applications are they good for, and why?](https://www.quora.com/What-are-Siamese-neural-networks-what-applications-are-they-good-for-and-why)
-[2]: [implementation of Siamese Networks for One Shot Learning paper](https://github.com/Goldesel23/Siamese-Networks-for-One-Shot-Learning)
-[3]: [Omniglot dataset](https://github.com/brendenlake/omniglot)
-[4]: [MNIST dataset](http://yann.lecun.com/exdb/mnist/)
-[5]: [One-shot learning by inverting a compositional causal process](https://cims.nyu.edu/~brenden/LakeEtAlNips2013.pdf)
+1. [What are Siamese neural networks, what applications are they good for, and why?](https://www.quora.com/What-are-Siamese-neural-networks-what-applications-are-they-good-for-and-why)
+2. [implementation of Siamese Networks for One Shot Learning paper](https://github.com/Goldesel23/Siamese-Networks-for-One-Shot-Learning)
+3. [Omniglot dataset](https://github.com/brendenlake/omniglot)
+4. [MNIST dataset](http://yann.lecun.com/exdb/mnist/)
+5. [One-shot learning by inverting a compositional causal process](https://cims.nyu.edu/~brenden/LakeEtAlNips2013.pdf)
 
 
 
