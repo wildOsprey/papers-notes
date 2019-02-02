@@ -10,9 +10,9 @@ The idea is that you have a base shape and you try to fit it into the image as s
 
 AAM consist of the following parts: 
 
-*Shape Model
+#### Shape Model
 
-    We can generate any shape from the base shape with parameters by **Equation 1**, where: 
+We can generate any shape from the base shape with parameters by **Equation 1**, where: 
 
     **c** - represents the shape parameters
 
@@ -20,19 +20,19 @@ AAM consist of the following parts:
 
     **s0** - mean shape, computed from the training shapes before applying PCA
 
-    Changing shape parameters, we can get different face deformations and fit them to the real face.
+Changing shape parameters, we can get different face deformations and fit them to the real face.
 
 ![The shape and its deformations](https://github.com/wildOsprey/papers_notes/blob/facial-tracking/images/facial_tracking/aam/params_b.JPG)
 *Figure 2. The shape and its deformations[2].* 
 
 AAM can be with rigid or non-rigid transformations. By the definition from the linear algebra, a rigid transformation is that transformation, which does not change the shape or size of the preimage. Non-rigid transformation can change the size but not the shape. Rigid information includes scale, rotation, and translation.
 
-*Motion Model
+#### Motion Model
 
 The motion model consists of a warp function **W(s, p)** which is is one-to-one correspondence between all pixel locations with the convex hull matrix defined by shape **s** and parameter **p** . Parameter p represents shape parameters with rigid and non-rigid information included. Typical warping functions are the Piecewise Affine and the Thin Plate Splines.
 
 
-*Appearance Model
+#### Appearance Model
 
 Training of AAM model consist of three parts:
 
@@ -41,8 +41,8 @@ Training of AAM model consist of three parts:
 ![Top image depicts holistic approach, bottom - part-based.](https://github.com/wildOsprey/papers_notes/blob/facial-tracking/images/facial_tracking/aam/pipeline.jpeg)
 Figure 3. Top image depicts holistic approach, bottom - part-based. **f** - feature extraction function of the image **I** given the shape **s**. I can be the warped image (holistic approach) or the registered images in part-based approach[2].
 
-    Next step is to normalize the image in order to compensate for the different lighting conditions. 
-    One the third step we generate matrix Ba, so that we can form the representation of the face as  **A = A0 + Ba*c**, where **x0** - is the mean shape vector,  **Ba** - is the appearance basis and **c** - is the vector of appearance parameters. 
+	Next step is to normalize the image in order to compensate for the different lighting conditions. 
+	On the third step we generate matrix Ba, so that we can form the representation of the face as  **A = A0 + Ba*c**, where **x0** - is the mean shape vector,  **Ba** - is the appearance basis and **c** - is the vector of appearance parameters. 
 
 ![An appearance and its deformation](https://github.com/wildOsprey/papers_notes/blob/facial-tracking/images/facial_tracking/aam/appearance.JPG)
 *Figure 4. An appearance and its deformation[2].*
