@@ -15,28 +15,28 @@ Authors presented a system, called AlexNet, for face recognition, face verificat
 
 ### Research Focus
 
-One of the main goals of face verification and face recognition problems is that you need to make your system flexible. Imagine that you have a team and a face recognition or verification system. You trained your convnet to know who is who and everything is all right. But when you have a new member, you will need to train your network again. This is not very efficient. Authors offer one of possible solutions of this problem, using some ideas from DeepFace[4].
+One of the main goals of face verification and face recognition problems is that you need to make your system flexible. Imagine that you have a team and a face recognition or verification system. You trained your convnet to know who is who and everything is all right. But when you have a new member, you will need to train your network again. This is not very efficient. Authors offer one of possible solutions of this problem, using some ideas from DeepFace[4][4].
 
 
 ### Research Methodology
 
 The method is based on learning Euclidean embedding per image using a deep convolutional network.
 
-It is also known as **Siamise Network**[2, 3]. A Siamese Network is a type of neural network architecture that learns how to differentiate between two inputs.
+It is also known as **Siamise Network**[[2][2], [3][3]]. A Siamese Network is a type of neural network architecture that learns how to differentiate between two inputs.
 
 The network is trained in such a way that the squared L2 distances in the embedding space directly correspond to face similarity: faces of the same person have small distances and faces of distinct people have large distances.
 
-![FaceNet Architecture]()
+![FaceNet Architecture](https://github.com/wildOsprey/papers_notes/blob/master/images/facenet/facenet_architecture.png)
 *Figure 1. FaceNet Architecture*
 
 
 To train, they used triplets of roughly aligned matching / non-matching face patches. A triplet is a collection of one anchor image, one matching image and one non-matching image to the anchor image. The goal is to *minimize* the distance between anchor image and matching image and maximize the distance between anchor image and non-matching image.
 
-![The Triplet Loss in action]()
+![The Triplet Loss in action](https://github.com/wildOsprey/papers_notes/blob/master/images/facenet/triplet_loss.png)
 *Figure 2. The Triplet Loss in action*
 
 
-To do this, they defined *a triplet loss*. The loss is being minimized, when ![formula]()
+To do this, they defined *a triplet loss*. The loss is being minimized, when ![formula](https://github.com/wildOsprey/papers_notes/blob/master/images/facenet/formula.PNG)
 
 So, to train neural network means to find this function .
 
@@ -46,7 +46,7 @@ As a result, when the system gets an input image, it encodes it with the help of
 
 ### Data Collection / Data Analysis
 
-For testing authors used Labeled Faces in the Wild (LFW)[5] and YouTube Faces DB[6] datasets.
+For testing authors used Labeled Faces in the Wild (LFW)[5][5] and YouTube Faces DB[6][6] datasets.
 
 As an architecture for their convnet authors tried two options: The Zeiler&Fergus[7] and the Inception[8].
 
