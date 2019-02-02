@@ -24,6 +24,7 @@ Current state-of-art object detection systems are variants of the following appr
 SSD architecture is based on VGG16[7].
 
 ![Figure 1. SSD Architecture](https://github.com/wildOsprey/papers_notes/blob/ssd/images/ssd/ssd_architecture.png)
+*Figure 1. SSD Architecture*
 
 
 As you can see on the Figure1, VGG is used up to conv4_3. For each of next feature maps we apply detector and classifier. That allows us to find objects with different sizes. As a result we get coordinates of detection boxes and classification labels. Then, using **Non-Maximum Suppression** (NMS) algorithm[8] we merge discovered boxes to get final detection.
@@ -33,7 +34,7 @@ Let’s have a look on how detector and classifier work. As input, we have our f
 This is the main idea, you can find more details with great explanation and all formulas at the chapter 2 “The Single Shot Detection (SSD)”.
 
 ![Figure 2. Example of feature map with default boxes and corresponding localization and confidence](https://github.com/wildOsprey/papers_notes/blob/ssd/images/ssd/ssd_features_ex.png)
-
+*Figure 2. Example of feature map with default boxes and corresponding localization and confidence*
 
 ### Data Collection / Data Analysis
 
@@ -57,15 +58,15 @@ The main pros of this algorithm is its speed and accuracy, but as a cons it is n
 
 ### Useful Links
 
-    1. sd [SSD: Single Shot MultiBox Detector (How it works) - deepsystems.io](https://www.youtube.com/watch?v=P8e-G-Mhx4k)
-    2. [YOLO: You only look once (How it works) - deepsystems.io](https://www.youtube.com/watch?v=L0tzmv--CGY)
-    3. [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/pdf/1506.02640.pdf)
-    4. [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497)
-    5. [OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks](https://arxiv.org/abs/1312.6229)
-    6. [OverFeat implementation](https://github.com/sermanet/OverFeat)
-    7. [Keras | VGG16 Places365 - VGG16 CNN models pre-trained on Places365-Standard for scene classification](https://github.com/GKalliatakis/Keras-VGG16-places365)
-    8. [Non-Max Suppression lesson from coursera](https://ru.coursera.org/learn/convolutional-neural-networks/lecture/dvrjH/non-max-suppression)
-    9. [Stationary waveler transform](https://en.wikipedia.org/wiki/Stationary_wavelet_transform)
+    [1]: [SSD: Single Shot MultiBox Detector (How it works) - deepsystems.io](https://www.youtube.com/watch?v=P8e-G-Mhx4k)
+    [2]: [YOLO: You only look once (How it works) - deepsystems.io](https://www.youtube.com/watch?v=L0tzmv--CGY)
+    [3]: [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/pdf/1506.02640.pdf)
+    [4]: [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497)
+    [5]: [OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks](https://arxiv.org/abs/1312.6229)
+    [6]: [OverFeat implementation](https://github.com/sermanet/OverFeat)
+    [7]: [Keras | VGG16 Places365 - VGG16 CNN models pre-trained on Places365-Standard for scene classification](https://github.com/GKalliatakis/Keras-VGG16-places365)
+    [8]: [Non-Max Suppression lesson from coursera](https://ru.coursera.org/learn/convolutional-neural-networks/lecture/dvrjH/non-max-suppression)
+    [9]: [Stationary waveler transform](https://en.wikipedia.org/wiki/Stationary_wavelet_transform)
 
 
 
