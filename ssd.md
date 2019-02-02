@@ -58,15 +58,15 @@ The main pros of this algorithm is its speed and accuracy, but as a cons it is n
 
 ### Useful Links
 
-    [1]: [SSD: Single Shot MultiBox Detector (How it works) - deepsystems.io](https://www.youtube.com/watch?v=P8e-G-Mhx4k)
-    [2]: [YOLO: You only look once (How it works) - deepsystems.io](https://www.youtube.com/watch?v=L0tzmv--CGY)
-    [3]: [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/pdf/1506.02640.pdf)
-    [4]: [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497)
-    [5]: [OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks](https://arxiv.org/abs/1312.6229)
-    [6]: [OverFeat implementation](https://github.com/sermanet/OverFeat)
-    [7]: [Keras | VGG16 Places365 - VGG16 CNN models pre-trained on Places365-Standard for scene classification](https://github.com/GKalliatakis/Keras-VGG16-places365)
-    [8]: [Non-Max Suppression lesson from coursera](https://ru.coursera.org/learn/convolutional-neural-networks/lecture/dvrjH/non-max-suppression)
-    [9]: [Stationary waveler transform](https://en.wikipedia.org/wiki/Stationary_wavelet_transform)
+1. [SSD: Single Shot MultiBox Detector (How it works) - deepsystems.io](https://www.youtube.com/watch?v=P8e-G-Mhx4k)
+2. [YOLO: You only look once (How it works) - deepsystems.io](https://www.youtube.com/watch?v=L0tzmv--CGY)
+3. [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/pdf/1506.02640.pdf)
+4. [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497)
+5. [OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks](https://arxiv.org/abs/1312.6229)
+6. [OverFeat implementation](https://github.com/sermanet/OverFeat)
+7. [Keras | VGG16 Places365 - VGG16 CNN models pre-trained on Places365-Standard for scene classification](https://github.com/GKalliatakis/Keras-VGG16-places365)
+8. [Non-Max Suppression lesson from coursera](https://ru.coursera.org/learn/convolutional-neural-networks/lecture/dvrjH/non-max-suppression)
+9. [Stationary waveler transform](https://en.wikipedia.org/wiki/Stationary_wavelet_transform)
 
 
 
